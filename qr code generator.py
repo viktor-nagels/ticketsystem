@@ -1,6 +1,6 @@
 # Viktor Nagels
 import qrcode
-from barcode import EAN13
+from barcode import Code128
 # ?barcode as png
 from barcode.writer import ImageWriter
 
@@ -20,7 +20,7 @@ data = input(str("qr code information: "))
 qr.add_data(data)
 
 # ?barcode as png
-barcode = EAN13(data, writer=ImageWriter())
+barcode = Code128(data, writer=ImageWriter())
 
 # ?barcode as svg
 #barcode = EAN13(date)
